@@ -1,23 +1,9 @@
-const readline = require("readline");
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
-rl.question("Enter student marks (0 - 100:", function(answer ){
-    let marks = parseInt(answer);
-    
-    //program that prompts user to input student marks
-
-    //give input prompt
-
-    //check inputs
-
-    if (marks < 0 && marks > 100){
-console.log("ERROR: Invalid input, please enter a number between 0 and 100")
+ function studentgrade(marks) { 
+    if (marks < 0 ||  marks >=100) {
+        console.log("Invalid input. Marks should be between 0 and 100")
     }
-    if (marks > 79) {
+    if (marks > 79)  {
         console.log("grades: A");
     }
     else if (marks >= 60) {
@@ -29,13 +15,10 @@ console.log("ERROR: Invalid input, please enter a number between 0 and 100")
     else if (marks >= 40) {
         console.log("grade: D");
     }
-    else {
+    else if (marks < 40){
         console.log("grade: E");
-    }
-
-    //Output correct grade
-    console.log("student grade {Grade}")
-
-    rl.close();
+    } 
     
-});
+    };
+
+studentgrade(99)
