@@ -10,7 +10,14 @@
 Create your own repository in github nd once your done create 3 different files for each codde challenge but include then in one folder. Use JavaScript to demonstarte the code challenges.
 
 ## Create a student-grade.js file
-This indicates the grading system for exams done and the end marks. Here we will use the function method.
+This indicates the grading system for exams done and 
+the end marks. Here we will use the function method.
+The output will result to:
+    - Marks > 79 = A
+    - Marks >= 60 = B
+    - Marks >= 49 = C
+    - Marks >= 40 = D
+    - Marks less than 40 = E
 
 
 ## Create a speed-detector.js file
